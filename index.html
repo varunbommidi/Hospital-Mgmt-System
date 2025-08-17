@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+		<title>Pickleball</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="ui">
+			<div class="title">Pickleball</div>
+			<div class="controls">
+				<button id="pauseBtn" type="button" aria-pressed="false">Pause</button>
+				<button id="restartBtn" type="button">Restart</button>
+				<label>
+					AI:
+					<select id="aiLevel">
+						<option value="easy">Easy</option>
+						<option value="medium" selected>Medium</option>
+						<option value="hard">Hard</option>
+					</select>
+				</label>
+			</div>
+		</div>
+		<canvas id="game" width="960" height="540" aria-label="Pickleball court" role="img"></canvas>
+		<div class="help">
+			<div><strong>Player</strong>: W/S or Up/Down. On touch: drag on left half.</div>
+			<div>First to 11, win by 2. Serve alternates every 2 points.</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html> 
